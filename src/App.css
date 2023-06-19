@@ -1,0 +1,21 @@
+:root{
+   --background-logo: #3A4895;
+   --font:#5264C3;
+   --font-two:#282828;
+   --font-three:#949494;
+   --button:#FFD814;
+   --cart:#F90505;
+   --white:white;
+ }
+
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   font-family: 'Inter', sans-serif;
+ }
+ a{
+   text-decoration: none;
+ }
+
