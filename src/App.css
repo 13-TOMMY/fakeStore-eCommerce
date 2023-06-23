@@ -5,7 +5,9 @@
    --font-three:#949494;
    --button:#FFD814;
    --cart:#F90505;
+   --black: #000;
    --white:white;
+   --background-hp:#FAFAFA;
  }
 
 
@@ -14,6 +16,9 @@
    padding:0;
    box-sizing: border-box;
    font-family: 'Inter', sans-serif;
+ }
+ .body-container{
+  background-color: var(--background-hp);
  }
  a{
    text-decoration: none;

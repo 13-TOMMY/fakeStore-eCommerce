@@ -10,11 +10,11 @@
   color: var(--background-logo);
   font-size: 24px;
   font-weight: 700;
-  padding-left: 5%;
+  padding-left: 2%;
 }
 /* Right side */
 .cart{
-   padding-right: 5%;
+   padding-right: 2%;
 }
 .amount {
    position: absolute;
