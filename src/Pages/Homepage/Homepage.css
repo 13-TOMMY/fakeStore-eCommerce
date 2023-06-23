@@ -1,0 +1,13 @@
+.homepage-container{
+   height: fit-content;
+   padding: 0 5%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+.product-cards{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
