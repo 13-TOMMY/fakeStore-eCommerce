@@ -1,6 +1,6 @@
 import React from 'react'
 import './Product.css'
-import {BsCart} from "react-icons/Bs";
+import {AiFillHeart} from "react-icons/Ai";
 
 function Product({ product }) {
   const formattedPrice = parseFloat(product.price).toFixed(2);
@@ -15,14 +15,14 @@ function Product({ product }) {
   return (
    <div className="product-card">
    <div className='img-container'>
-   <BsCart className='reactHeart'/>
+   <AiFillHeart className='reactHeart'/>
    <img src={product.image} alt={product.title} className='product-img'/>
    </div>
    <div className='detail-container'>
-    <div>
+   <a href={`/productDetails/${product?.id}`}>
    <h3 className='product-title'>{title}</h3>
    <p className='product-category'>{formattedCategory}</p>
-   </div>
+   </a>
    <p className='product-price'>{formattedPrice}€</p>
    </div>
  </div>
