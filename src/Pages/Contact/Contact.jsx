@@ -1,23 +1,57 @@
-import React from 'react'
-import './Contact.css'
+import React, { useState } from 'react';
+import './Contact.css';
 
 function Contact() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleMessageChange = (event) => {
+    setMessage(event.target.value);
+  };
+
   return (
-    <div className='contact-us'>
-      <div className='contact-us-container'>
-      <h2>Contact Us</h2>
+    <div className="contact-us">
+      <div className="contact-us-container">
+        <h2>Contact Us</h2>
         <form>
-          <label htmlFor="name">Name</label>
-          <input type="text" id="name" />
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" />
-          <label htmlFor="message">Message</label>
-          <textarea id="message" rows="4"></textarea>
+          <input
+            type="text"
+            id="name"
+            placeholder="Full Name"
+            value={name}
+            onChange={handleNameChange}
+            className={name ? 'input-with-content' : ''}
+          />
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            value={email}
+            onChange={handleEmailChange}
+            className={email ? 'input-with-content' : ''}
+          />
+          <textarea
+            id="message"
+            rows="4"
+            placeholder="Write your message here"
+            value={message}
+            onChange={handleMessageChange}
+            className={message ? 'input-with-content' : ''}
+          ></textarea>
           <button type="submit">Submit</button>
         </form>
-        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;
