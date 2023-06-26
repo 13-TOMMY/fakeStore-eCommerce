@@ -7,7 +7,7 @@ function Footer() {
       <div className="love-container">
       <p className="loveP">Made with ♥ by Tommy </p>
       </div>
-      <div className="contact-us-container">
+      <div className="contact-us-container-footer">
          <a href="/contact" className='contact-us'>Contact US</a>
       </div>
     </div>

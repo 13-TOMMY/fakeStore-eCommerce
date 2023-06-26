@@ -3,7 +3,7 @@
    display: flex;
    flex-wrap: wrap;
 }
-button{
+.filter-button{
    border: none;
    padding: 0 2%;
    color: #5264C3;
@@ -13,7 +13,7 @@ button{
    background-color: transparent;
    cursor: pointer;
 }
-button:hover{
+.filter-button:hover{
    border-radius: 25px;
    background-color: var(--button);
    color: var(--black);

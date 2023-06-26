@@ -22,9 +22,9 @@ function CategoryFilter({ onCategorySelect }) {
 
   return (
     <div className='button-container'>
-      <button onClick={() => onCategorySelect('')}>All</button>
+      <button className='filter-button' onClick={() => onCategorySelect('')}>All</button>
       {categories.map((category) => (
-        <button key={category} onClick={() => onCategorySelect(category)}>
+        <button  className='filter-button' key={category} onClick={() => onCategorySelect(category)}>
           {category.charAt(0).toUpperCase() + category.slice(1)}
         </button>
       ))}
