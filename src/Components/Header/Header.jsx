@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import "./Header.css"
 import { Link } from 'react-router-dom';
-import { BsCart } from 'react-icons/Bs';
+import { BsCart } from 'react-icons/bs';
 import { CartContext } from '../../contexts/CartContext';
 
 function Header() {
