@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import './Product.css';
-import { AiFillHeart } from 'react-icons/Ai';
+import { AiFillHeart } from 'react-icons/ai';
 import { CartContext } from '../../contexts/CartContext';
 
 function Product({ product }) {
