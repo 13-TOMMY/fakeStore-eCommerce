@@ -86,6 +86,7 @@
   text-align: center;
   border: none;
   font-size: 30px;
+  cursor: pointer;
 }
 /*bottom*/
 .checkout-bottom {
@@ -115,6 +116,7 @@
   padding: 1% 2%;
   border: none;
   margin-top: 5%;
+  cursor: pointer;
 }
 /*Modal*/
 .modal-div {
@@ -142,6 +144,7 @@
   line-height: normal;
   padding: 1% 2%;
   margin: 5% 25% 10% 25%;
+  cursor: pointer;
 }
 
 @media (max-width: 850px) {
