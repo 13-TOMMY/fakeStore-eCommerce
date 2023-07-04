@@ -1,0 +1,28 @@
+.footer {
+  height: 10vh;
+  padding: 25px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: var(--background-logo);
+}
+/* Left side */
+.love-container{
+   padding-left: 5%;
+}
+.love-container p{
+   color: var(--white);
+   font-size: 12px;
+   font-weight: 400;
+   font-style: normal;
+}
+/* Right side */
+.contact-us-container-footer{
+   padding-right: 5%;
+}
+.contact-us{
+   color: var(--white);
+   font-size: 12px;
+   font-weight: 400;
+   font-style: normal;
+}

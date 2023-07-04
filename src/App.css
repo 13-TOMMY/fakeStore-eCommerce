@@ -5,7 +5,9 @@
    --font-three:#949494;
    --button:#FFD814;
    --cart:#F90505;
+   --black: #000;
    --white:white;
+   --background-hp:#FAFAFA;
  }
 
 
@@ -15,6 +17,31 @@
    box-sizing: border-box;
    font-family: 'Inter', sans-serif;
  }
+ html{
+  background-color: var(--background-hp);
+ }
+.body-container {
+  
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+header {
+  height: 10%;
+  background-color: #f2f2f2;
+}
+
+footer {
+  height: 10%;
+  background-color: #f2f2f2;
+}
+
  a{
    text-decoration: none;
  }

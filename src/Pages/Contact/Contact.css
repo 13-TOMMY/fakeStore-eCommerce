@@ -1,0 +1,88 @@
+.contact-us {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-us-container {
+  width: min(80%, 800px);
+  height: min(100%, 800px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--white);
+  margin: 1% 0 5% 0;
+  padding: 5% 0;
+}
+
+.contact-us h2 {
+  padding-bottom: 5%;
+  color: var(--font-two);
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  font-size: 16px;
+  background-color: var(--font-three);
+  color: var(--white);
+}
+
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder,
+textarea::placeholder {
+  color: #c8c8c8;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(102, 92, 171, 0.3);
+}
+
+form button[type="submit"] {
+  background-color: var(--background-logo);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.5s ease-in-out;
+  text-align: center;
+}
+
+form button[type="submit"]:hover {
+  background-color: var(--button);
+}
+
+.input-with-content {
+  background-color: var(--font);
+}
+
+@media (max-width: 850px) {
+  .contact-us h2 {
+    font-size: 24px;
+  }
+  form input,
+  form textarea {
+    width: 80%;
+  }
+}
