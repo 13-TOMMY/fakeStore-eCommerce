@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './Components/Header/Header';
@@ -7,10 +6,12 @@ import Homepage from './Pages/Homepage/Homepage';
 import ProductDetails from './Pages/ProductDetails/ProductDetails';
 import Checkout from './Pages/Checkout/Checkout';
 import Contact from './Pages/Contact/Contact';
+import CartContextProvider from './contexts/CartContext';
 
 function App() {
   return (
     <BrowserRouter>
+    <CartContextProvider>
       <div className='body-container'>
         <Header />
         <div className='main-content'>
@@ -23,6 +24,7 @@ function App() {
         </div>
         <Footer />
       </div>
+      </CartContextProvider>
     </BrowserRouter>
   );
 }
