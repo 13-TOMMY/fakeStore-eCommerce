@@ -25,18 +25,33 @@
   margin: 5% 0 2.5% 0;
   overflow: hidden;
 }
-.reactHeart{
-   position: absolute;
-   width: 25px;
-   height: 25px;
+.heart-icon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
   transform: translate(58px, -53px);
-  background-color: #E7E7E7;
+  background-color: #e7e7e7;
   border-radius: 50%;
   padding: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--white); /* Set the color of the heart icon */
+  color: var(--white);
+  cursor: pointer;
+}
+.heart-icon-blue {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  transform: translate(58px, -53px);
+  background-color: #e7e7e7;
+  border-radius: 50%;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background-logo);
+  cursor: pointer;
 }
 .product-img {
   width: 80%;
