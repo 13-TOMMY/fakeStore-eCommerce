@@ -1,4 +1,4 @@
-# fakeStore-eCommerce
+# Fake-store
 
 ## Objective
 - Create a responsive  SPA using react-router to display data fetched from an API.
